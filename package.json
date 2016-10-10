@@ -1,8 +1,15 @@
 {
   "name": "react-intl-redux",
-  "version": "0.1.0-abend.2",
+  "version": "0.1.0-abend.3",
   "description": "Redux binding for React Intl",
   "main": "lib/index",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
   "scripts": {
     "build": "babel src --out-dir lib",
     "postinstall": "babel src --out-dir lib",
