@@ -5,6 +5,7 @@
   "main": "lib/index",
   "scripts": {
     "build": "babel src --out-dir lib",
+    "postinstall": "babel src --out-dir lib",
     "clean": "rimraf lib dist coverage",
     "lint": "eslint .",
     "prepublish": "npm-run-all clean build",
